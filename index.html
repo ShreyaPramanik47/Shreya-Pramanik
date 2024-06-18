@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/Shreya pic.jpg">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/image.png" />
+    <link rel="stylesheet" href="style.css" />
     <title>Shreya Pramanik</title>
+
 </head>
+
 <body>
     <div class="wrapper">
         <div class="container">
@@ -16,46 +19,83 @@
                 <div class="nav-name">
                     <p>Shreya Pramanik</p>
                 </div>
-                <div class="tab">
+                <div class="tab sidebar">
+                    <img src="image/cancel.png" alt="menu" class="nav-item-menubar" id="menubar" onclick=hideSidebar()>
                     <p class="nav-item" data-tab="tab1">Home</p>
                     <p class="nav-item" data-tab="tab2">About</p>
                     <p class="nav-item" data-tab="tab3">Skill</p>
                     <p class="nav-item" data-tab="tab4">Projects</p>
                     <p class="nav-item" data-tab="tab5">Contact Me</p>
-                    <img src="images/mode.png" alt="mode-change" width="29px" height="27px" id="icon">
+                    <img src="image/mode.png" alt="mode-change" width="29px" height="27px" id="icon" />
+                    
                 </div>
-                
+                <div class="tab">
+                    <p class="nav-item hideOnMobile" data-tab="tab1">Home</p>
+                    <p class="nav-item hideOnMobile" data-tab="tab2">About</p>
+                    <p class="nav-item hideOnMobile" data-tab="tab3">Skill</p>
+                    <p class="nav-item hideOnMobile" data-tab="tab4">Projects</p>
+                    <p class="nav-item hideOnMobile" data-tab="tab5">Contact Me</p>
+                    <img src="image/menu (1).png"  alt="menu" class="nav-item-menubar" id="menubar" onclick=showSidebar()>
+                    <img src="image/mode.png " alt="mode-change" width="29px" height="27px" id="icon" class="hideIconOnMobile" />
+                    
+                </div>
             </div>
 
             <!-- CONTENT -->
             <div class="content">
-                <div class="home tabcontent" id="tab1">
-                    <div class="content-links">
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                    </div>
-                    <div class="content-main">
-                        Hi, I am Shreya Pramanik
-                        
+                <div class="tabcontent" id="tab1">
+                    <div class="home">
+                        <div class="content-links">
+                            <a href="https://www.linkedin.com/in/shreya-pramanik-530366220" target="_blank">
+                                <img src="image/linkedin (1).png" alt="linkdin" />
+                            </a>
+                            <a href="https://github.com/ShreyaPramanik47" target="_blank">
+                                <img src="image/social.png" alt="github" />
+                            </a>
+                            <a href="https://x.com/ShreyaX47" target="_blank">
+                                <img src="image/twitter (1).png" alt="twiter" />
+                            </a>
+                            <a href="https://www.instagram.com/shreyapramanik47/" target="_blank">
+                                <img src="image/instagram (1).png" alt="twiter" />
+                            </a>
+                        </div>
+                        <div class="content-main">
+                            <div class="content-info">
+                                <h1>Hi, I'm Shreya </h1>
+                                <p class="text">
+                                    I am a <span class="role"></span>
 
-                    </div>
-                    <div class="content-image">
+                                </p>
+                                <p class="text2">Building Software to solve real life <span>problems</span></p>
+                                <a href="mailto:shreyapramanik909@gmail.com" id="mail">
+                                    <div class="btn-pink" id="btn">Hire me</div>
+                                </a>
+                                <div>
+                                    <a href="image/SHREYA_PRAMANIK_RESUME.pdf" download class="cv">
+                                        <span>Download CV </span>
+                                    <img src="image/download.png" alt="">
+                                    </a>
+                                    
+                                </div>
 
+                            </div>
+                            <div class="content-image" id="tilt">
+                                <img src="image/image.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                    .
-
                 </div>
+                <div class="tabcontent" id="tab2">Shib</div>
+                <div class="tabcontent" id="tab3">tab3</div>
+                <div class="tabcontent" id="tab4">tab4</div>
+                <div class="tabcontent" id="tab5">tab5</div>
             </div>
         </div>
     </div>
-    
-    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="style.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
