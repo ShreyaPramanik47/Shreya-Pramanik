@@ -17,7 +17,7 @@
             <!-- NAVBAR -->
             <div class="navbar">
                 <div class="nav-name">
-                    <p>Shreya Pramanik</p>
+                    <p>Shreya <span>Pramanik</span> </p>
                 </div>
                 <div class="tab sidebar">
                     <img src="image/cancel.png" alt="menu" class="nav-item-menubar" id="menubar" onclick=hideSidebar()>
@@ -26,8 +26,8 @@
                     <p class="nav-item" data-tab="tab3">Skill</p>
                     <p class="nav-item" data-tab="tab4">Projects</p>
                     <p class="nav-item" data-tab="tab5">Contact Me</p>
-                    <img src="image/mode.png" alt="mode-change" width="29px" height="27px" id="icon" />
-                    
+                    <!-- <img src="image/mode.png" alt="mode-change" width="29px" height="27px" id="icon" /> -->
+
                 </div>
                 <div class="tab">
                     <p class="nav-item hideOnMobile" data-tab="tab1">Home</p>
@@ -35,9 +35,10 @@
                     <p class="nav-item hideOnMobile" data-tab="tab3">Skill</p>
                     <p class="nav-item hideOnMobile" data-tab="tab4">Projects</p>
                     <p class="nav-item hideOnMobile" data-tab="tab5">Contact Me</p>
-                    <img src="image/menu (1).png"  alt="menu" class="nav-item-menubar" id="menubar" onclick=showSidebar()>
-                    <img src="image/mode.png " alt="mode-change" width="29px" height="27px" id="icon" class="hideIconOnMobile" />
-                    
+                    <img src="image/menu (1).png" alt="menu" class="nav-item-menubar" id="menubar"
+                        onclick=showSidebar()>
+                    <img src="image/mode.png " alt="mode-change" width="29px" height="27px" id="icon" />
+
                 </div>
             </div>
 
@@ -68,14 +69,14 @@
                                 </p>
                                 <p class="text2">Building Software to solve real life <span>problems</span></p>
                                 <a href="mailto:shreyapramanik909@gmail.com" id="mail">
-                                    <div class="btn-pink" id="btn">Hire me</div>
+                                    <button class="btn-pink" id="btn">Hire me</button>
                                 </a>
                                 <div>
                                     <a href="image/SHREYA_PRAMANIK_RESUME.pdf" download class="cv">
                                         <span>Download CV </span>
-                                    <img src="image/download.png" alt="">
+                                        <img src="image/download.png" alt="">
                                     </a>
-                                    
+
                                 </div>
 
                             </div>
@@ -85,14 +86,184 @@
                         </div>
                     </div>
                 </div>
-                <div class="tabcontent" id="tab2">Shib</div>
-                <div class="tabcontent" id="tab3">tab3</div>
-                <div class="tabcontent" id="tab4">tab4</div>
-                <div class="tabcontent" id="tab5">tab5</div>
+                <div class="tabcontent" id="tab2">
+                    <div class="about">
+                        <div>
+                            <h1>About Me</h1>
+                            <p>My Introduction</p>
+                        </div>
+                        <div class="about-content">
+                            <div class="about-img" id="tilt2">
+                                <img src="image/shreyaAbout.png" alt="shreya">
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Hey there,👋 I am Shreya Pramanik from Kolkata, West Bengal.
+                                    I am a Final Year Student at University Of Engineering & Management, Kolkata,
+                                    pursuing B.Tech in Computer Science & Engineering.
+                                    <span> Apart from coding , some other activities that I love to do!
+                                        <div class="things-to-do">
+                                            Exploring New Technology,Writing Tech Blogs,Content Creation
+                                        </div>
+
+                                        <ul>
+                                            <li>Exploring New Technology</li>
+                                            <li>Writing Tech Blogs</li>
+                                            <li>Content Creation</li>
+                                        </ul>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabcontent" id="tab3">
+                    <div class="skill">
+                        <div class="skill-heading">
+                            <h1>Skills</h1>
+                            <p>My Technical Skills</p>
+                        </div>
+                        <div class="skills-dropdown">
+                            <div class="dropdown1">
+                                <button onclick="myFunction()" class="dropbtn ">
+                                    <img src="image/lang.png" width="25px" alt=""> Languages, Libraries &
+                                    Frameworks</button>
+                                <!-- <p>I have picked up over year</p> -->
+                                <div class=" myDropdown dropdown-content">
+                                    <p>
+                                        C++</p>
+                                    <p> Javascript</p>
+                                    <p> React</p>
+                                    <p>Node.js</p>
+                                    <p>Tailwind CSS</p>
+                                    <p>MongoDB</p>
+                                </div>
+                            </div>
+                            <div class="dropdown2">
+                                <button onclick="myFunction2()" class="dropbtnn"> <img src="image/tools.png"
+                                        width="25px" alt=""> Tools</button>
+                                <!-- <p>Tools that I know and use on a daily basis</p> -->
+                                <div class=" myDropdown2 dropdown-content2">
+                                    <p>Git</p>
+                                    <p>Github</p>
+                                    <p>MySQL Workbench</p>
+                                    <p>VS Code</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabcontent" id="tab4">
+                    <div class="project-section">
+                        <div class="project-heading">
+                            <h1>Projects</h1>
+                            <p>Most recent Work</p>
+                        </div>
+                        <div class="all-projects">
+                            <div class="project slide">
+                                <div class="projectt">
+                                    <div class="project-img">
+                                        <img src="image/weatherApp.png" alt="">
+                                    </div>
+                                    <div class="project-text">
+                                        <h2>Weather App</h2>
+                                        <p>A weather app using HTML, CSS, and JavaScript, integrated with an API for
+                                            real-time weather updates. The app features a sleek, responsive design for
+                                            an optimal user experience on any device.</p>
+                                        <div class="codeButton">
+                                            <a href="https://github.com/ShreyaPramanik47/Weather-App"
+                                                target="_blank">Code</a>
+                                            <a href="https://shreyapramanik47.github.io/Weather-App/"
+                                                target="_blank">Watch Live</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project slide">
+                                <div class="projectt">
+                                    <div class="project-img">
+                                        <img src="image/Password Generator App.png" alt="">
+                                    </div>
+                                    <div class="project-text">
+                                        <h2>Password Generator</h2>
+                                        <p>This app generates strong, secure passwords with customizable options for
+                                            length and complexity. Enhance your online security effortlessly with this
+                                            easy-to-use tool..</p>
+                                        <div class="codeButton">
+                                            <a href="https://github.com/ShreyaPramanik47/Password-Generator-App"
+                                                target="_blank">Code</a>
+                                            <a href="https://shreyapramanik47.github.io/Password-Generator-App/"
+                                                target="_blank">Watch Live</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project slide">
+                                <div class="projectt">
+                                    <div class="project-img">
+                                        <img src="image/MyGallery.png" alt="">
+                                    </div>
+                                    <div class="project-text">
+                                        <h2>My Gallery</h2>
+                                        <p>A gallery website, enhanced with smooth animations for a visually engaging
+                                            experience. The site showcases images in a stylish, interactive layout,
+                                            offering an elegant platform to display artwork or photography.</p>
+                                        <div class="codeButton">
+                                            <a href="https://github.com/ShreyaPramanik47/My-Gallery"
+                                                target="_blank">Code</a>
+                                            <a href="https://shreyapramanik47.github.io/My-Gallery/"
+                                                target="_blank">Watch Live</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabcontent" id="tab5">
+                    <div class="form-conatiner">
+                        <div class="form-heading">
+                            <h1>Contact Me</h1>
+                            <p>Want to connect? My inbox is always open!</p>
+                        </div>
+                        <div class="form">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="f0c6f052-5e2c-43b4-8c5a-6cea3c9237fb">
+                                
+                                        <input type="text" id="home" placeholder="Your Name" name="my_name" required>
+                                        <input type="email" id="email" placeholder="Email id" name="my_email" required>
+                                    
+                                    
+                                        <input type="text" id="phone" placeholder="Phone No." name="my_phoneNo"
+                                            required>
+                                        
+                                    
+
+                                <textarea id="message" cols="30" rows="10" placeholder="Write Here"
+                                    name="my_message"></textarea>
+                                <div class="button">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="footer">© Shreya Pramanik. All rights reserved</p>
+                </div>
             </div>
         </div>
     </div>
 
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="style.js"></script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>

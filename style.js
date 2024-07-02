@@ -85,3 +85,75 @@ el.addEventListener('mousedown', function() {
 el.addEventListener('mouseup', function() {
   el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
 })
+
+
+// ----DROP DOWN MENUS-----
+
+function myFunction() {
+  let options = document.querySelector('.myDropdown');
+  options.classList.toggle('show');
+  let dropdown = document.querySelector('.dropbtn');
+  dropdown.classList.toggle('active');
+  adjustSecondDropdown();
+}
+
+function myFunction2() {
+  let options = document.querySelector('.myDropdown2');
+  options.classList.toggle('show2');
+  let dropdown = document.querySelector('.dropbtnn');
+  dropdown.classList.toggle('active');
+}
+
+function adjustSecondDropdown() {
+  let firstDropdown = document.querySelector('.myDropdown');
+  let secondDropdownContainer = document.querySelector('.dropdown2');
+
+  // if (firstDropdown.classList.contains('show')) {
+  //     secondDropdownContainer.style.marginTop = `${firstDropdown.offsetHeight}px`;
+  // } else {
+  //     secondDropdownContainer.style.marginTop = '0';
+  // }
+}
+
+
+// Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    let translateXValue = -((slideIndex - 1) * 100 / slides.length);
+    document.querySelector('.all-projects').style.transform = `translateX(${translateXValue}%)`;
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" activee", "");
+    }
+    dots[slideIndex - 1].className += " activee";
+}
+
+// CONTACT ME FORM
+
