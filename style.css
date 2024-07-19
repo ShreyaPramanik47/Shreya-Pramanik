@@ -1783,10 +1783,6 @@ button{
     cursor: pointer;
     font-size: 17px;
     width: 150px;
-<<<<<<< HEAD
-=======
-/*     font-family: 'Courier New', Courier, monospace; */
->>>>>>> 52d32ed04243fe370ef991aa07e380eff4a663d2
 }
 @media only screen and (max-width: 257px) {
     button{
